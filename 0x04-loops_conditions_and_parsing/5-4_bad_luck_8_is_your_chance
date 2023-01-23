@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#Displays "Best School" but
+#on the 9th iteration displays "Hi"
+
+i=1
+msg="Best School"
+
+while [ $i -le 10 ]
+do
+	if [ $i == 8 ]
+	then	
+		echo "good luck"	
+	elif [ $i == 4 ]
+	then
+		echo "bad luck"
+	else
+		echo "$msg"
+	fi
+
+	(( i++ ))
+done

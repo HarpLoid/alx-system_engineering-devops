@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Displays "Best School" using while loop
+
+i=0
+msg="Best School"
+
+while [ $i -le 9 ]
+do
+	echo "$msg"
+	(( i++ ))
+done
