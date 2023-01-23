@@ -11,16 +11,9 @@ do
 	echo "$i"
 
 	case $i in
-
-		4)
-			echo "bad luck China"
-			;;
-		9)
-			echo "bad luck Japan"
-			;;
-		17)
-			echo "bad luck Italy"
-			;;
+		4) echo "bad luck China" ;;
+		9) echo "bad luck Japan" ;;
+		17) echo "bad luck Italy" ;;
 	esac
 	(( i++ ))
 done
