@@ -3,7 +3,7 @@
 
 msg="Best School"
 
-for (( i=0 ; i<9 ; i++));
+for _ in {0..9};
 do
 	echo "$msg"
 done
