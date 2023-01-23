@@ -2,16 +2,16 @@
 #Displays time for 12 hours and 59 minutes
 
 h=0
-m=1
 
-while [ $h -le 12 ]
+while [ "$h" -le 12 ]
 do
 	echo "Hour: $h"
-	h=$((h + 1))
-	while [ $m -le 59 ]
+	(( h++ ))
+
+	m=1
+	while [ "$m" -le 59 ]
 	do
 		echo "$m"
-		m=$((m + 1))
+		(( m++ ))
 	done
-	m=0
 done
