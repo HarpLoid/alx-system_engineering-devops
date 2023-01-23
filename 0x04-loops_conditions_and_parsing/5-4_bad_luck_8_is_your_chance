@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #Displays "Best School" but
-#on the 9th iteration displays "Hi"
+#on the 4th iteration displays "bad luck"
+#on the 8th iteration displays "good luck"
 
 i=1
 msg="Best School"
