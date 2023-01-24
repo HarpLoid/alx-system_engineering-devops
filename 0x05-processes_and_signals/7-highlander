@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
-# Displays infinity and beyond
-# infinitely
+
+msg()
+{
+	echo "I am invincible!!!"
+}
+
+trap "msg" SIGTERM
 
 while (( 1 ));
 do

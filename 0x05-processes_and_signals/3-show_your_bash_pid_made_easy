@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
+# Display Bash scripts PID
+# along with process name
 
 pgrep -l './4-to_infinity_and_beyond'
