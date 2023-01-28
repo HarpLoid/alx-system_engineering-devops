@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# A bash script to change the IP of localhost
+# and facebook
+
+cp /etc/hosts hosts_tmp
+sed -i s/127.*$/127.0.0.1\\tlocalhost/g hosts_tmp
+cp -f hosts_tmp /etc/hosts
