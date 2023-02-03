@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Bash script shows listening sockets
-
-netstat -tulp
