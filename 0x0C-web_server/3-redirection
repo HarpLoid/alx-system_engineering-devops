@@ -6,8 +6,8 @@
 sudo apt update -y
 sudo apt install -y nginx
 sudo mkdir -p /var/www/html
-sudo chown -R $USER:$USER /var/www/html
-sudo chown -R $USER:$USER /etc/nginx
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chown -R "$USER":"$USER" /etc/nginx
 
 echo "Hello World!" > /var/www/html/index.html
 echo "http {
