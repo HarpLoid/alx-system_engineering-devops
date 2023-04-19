@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Displays "Best School" 10 times
-
-msg="Best School"
-
-for _ in {0..9};
-do
-	echo "$msg"
-done
