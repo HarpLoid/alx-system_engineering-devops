@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Display lines containing the bash
+# allowing you to easily get the PID
+# of the Bash process
+
+# shellcheck disable=SC2009
+ps auxf | grep 4-to_infinity_and_beyond 
