@@ -8,7 +8,10 @@ A: Our load-balancer is using a Round Robin algorithm distribution. Meaning the 
 
 Q: Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
 
-A: Our load-balancer is enabling an Active-Active set up.
+A: Our load-balancer is enabling an Active-Active setup. Active-Active setups
+	uses two or more active servers to handle requests concurrently that is each server is actively serving requests equally or in a predetermined fashion while
+	Active-Passive setups uses one server or subset of servers to handle requests while the other or others remain in passive mode and comes into
+	action when the active server(s) fail or when additional resources are needed
 
 Q: How a database Primary-Replica (Master-Slave) cluster works
 
@@ -20,5 +23,7 @@ A: One of the main differences between the primary node and the replica node, re
 
 Issues with this infrastructure:
 Q: Where are SPOF
+A: Failure of the Load balancer
 Q: Security issues (no firewall, no HTTPS)
+A: no firewall
 Q: No monitoring
