@@ -1,0 +1,24 @@
+Q: For every additional element, why you are adding it
+
+A: The new configuration is composed of two master-servers and one slave-servers. As the master-servers are going to be working based on a Active-Active set up, their configuration must be identical, therefore we need to add every additional element as the simple web infrastructure we had in the previous point.
+
+Q: What distribution algorithm your load balancer is configured with and how it works
+
+A: Our load-balancer is using a Round Robin algorithm distribution. Meaning the queries requested are distributed to every server sequentially one after another.
+
+Q: Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+
+A: Our load-balancer is enabling an Active-Active set up.
+
+Q: How a database Primary-Replica (Master-Slave) cluster works
+
+A: A database Primary-Replica (Master-Replica) is a mechanism which enables data of one database server (the master) to be replicated or to be copied to one or more computers or database servers (the slaves), in order all users share the same level of information.
+
+Q: What is the difference between the Primary node and the Replica node in regard to the application
+
+A: One of the main differences between the primary node and the replica node, regarding the application, is that the primary database is regarded as the authoritative source, while the replica database is synchronized to it. The primary node serves as the keeper of information, here the “real” data is kept, then writing only happens here.
+
+Issues with this infrastructure:
+Q: Where are SPOF
+Q: Security issues (no firewall, no HTTPS)
+Q: No monitoring
