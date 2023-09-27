@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Installs Nginx with the following config
+# Listening on port 80
+# Returns a page that contains 'Hello World!'
+
+sudo apt-get update
+sudo apt-get install -y nginx
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+sudo service nginx start
