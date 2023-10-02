@@ -3,14 +3,9 @@
 # Configure HAproxy so that it send traffic to web-01 and web-02
 # Distribute requests using a roundrobin algorithm
 # Make sure that HAproxy can be managed via an init script
-CFG="\\\nfrontend lb_frontend\n
-\tbind *:80\n
-\tmode http\n
-\tdefault_backend lb_backend\n
-backend lb_backend\n
-\tbalance roundrobin\n
-\tserver 132025-web-01 52.91.117.92 check\n
-\tserver 132025-web-02 100.25.111.11 check\n"
+
+CFG="\\nlisten lb 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 132025-web-01 52.91.117.92 check\n\tserver 132025-web-02 100.25.111.11 check\n"
+#CFG="\\nfrontend lb_frontend\n\tbind *:80\n\tmode http\n\tdefault_backend lb_backend\nbackend lb_backend\n\tbalance roundrobin\n\tserver 132025-web-01 52.91.117.92 check\n\tserver 132025-web-02 100.25.111.11 check\n"
 
 
 sudo apt-get update
