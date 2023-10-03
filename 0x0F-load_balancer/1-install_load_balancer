@@ -8,7 +8,7 @@
 CFG="\\nfrontend lb_frontend\n\tbind *:80\n\tmode http\n\tdefault_backend
 lb_backend\nbackend lb_backend\n\tbalance roundrobin\n\toption
 httpclose\n\toption forwardfor\n\tserver 132025-web-01 52.91.117.92:80
-check\n\tserver 132025-web-02 100.25.111.11:08 check\n"
+check\n\tserver 132025-web-02 100.25.111.11:80 check\n"
 
 
 sudo apt-get update
