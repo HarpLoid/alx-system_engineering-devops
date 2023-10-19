@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+BCK_FILE="backup.sql"
+ARCH_NAME="$(date +"%d-%m-%Y").tar.gz"
+
+mysqldump -u root -p"$1" --all-databases > "$BCK_FILE"
+
+tar -czvf "$ARCH_NAME" "$BCK_FILE"
+
