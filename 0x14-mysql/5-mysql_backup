@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Backs up all databases of MYSQL DB
 
 BCK_FILE="backup.sql"
 ARCH_NAME="$(date +"%d-%m-%Y").tar.gz"
