@@ -31,9 +31,10 @@ def render():
                 NUMBER_OF_DONE_TASKS += 1
                 TASK_TITLE.append(todo.get('title'))
 
-    print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE_NAME,
-                                                          NUMBER_OF_DONE_TASKS,
-                                                          TOTAL_NUMBER_OF_TASKS))
+    print("Employee {} is done with tasks({}/{}):"
+          .format(EMPLOYEE_NAME,
+                  NUMBER_OF_DONE_TASKS,
+                  TOTAL_NUMBER_OF_TASKS))
 
     for task in TASK_TITLE:
         print("\t {}".format(task))
