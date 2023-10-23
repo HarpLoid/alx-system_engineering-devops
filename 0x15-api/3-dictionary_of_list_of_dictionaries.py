@@ -29,8 +29,8 @@ def export_all():
         task = []
         for tsk in TASK_TITLE:
             task.append({"username": user[1],
-                         "task": tsk[1],
-                        "completed": tsk[2]})
+                         "completed": tsk[2],
+                         "task": tsk[1]})
         data[str(user[0])] = task
 
     file_name = "todo_all_employees.json"
